@@ -23,9 +23,9 @@ class List extends React.Component { // definicja klasy List. Klasa List dziedzi
             {this.props.children}
         </div>
         <div className={styles.columns}>
-          <Column column1={<h3>Animals</h3>} 
-          column2={<h3>Plants</h3>} 
-          column3={<h3>Minerals</h3>} />
+          <Column titleColumn={'Animals'} />
+          <Column titleColumn={'Plants'} />
+          <Column titleColumn={'Minerals'} />
         </div>
       </section>
     )
