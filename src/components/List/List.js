@@ -46,13 +46,17 @@ class List extends React.Component { // definicja klasy List. Klasa List dziedzi
     return ( // metoda render zwraca obiekt JSX, a konkretniej div
       <section className={styles.component}>
         <Hero titleText={this.props.title} image={this.props.image} />
+        
         <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
         </div>
+
         <div className={styles.columns}>
+
           {/*<Column titleColumn={'Animals'} />
           <Column titleColumn={'Plants'} />
           <Column titleColumn={'Minerals'} />*/}
+
           {this.state.columns.map(({key, ...columnProps}) => (
             <Column key={key} {...columnProps} />
           ))}
