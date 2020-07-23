@@ -5,6 +5,7 @@ import Column from '../Column/Column.js';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
+import Creator from '../Creator/Creator.js';
 
 class List extends React.Component { // definicja klasy List. Klasa List dziedziczy z klasy React.Component
   state = { // definicja stanu komonentu List
@@ -25,6 +26,22 @@ class List extends React.Component { // definicja klasy List. Klasa List dziedzi
     description: settings.defaultListDescription,
   }
 
+  addColumn(title){ // metoda AddColumn, która zmienia stan za pomocą metody this.setState
+    this.setState(state => (
+      {
+        columns: [
+          ...state.columns,
+          {
+            key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
+            title,
+            icon: 'list-alt',
+            cards: []
+          }
+        ]
+      }
+    ));
+  }
+
   render() { // metoda render - od niej zależy to co wyświetli się w przeglądarce
     return ( // metoda render zwraca obiekt JSX, a konkretniej div
       <section className={styles.component}>
@@ -39,6 +56,10 @@ class List extends React.Component { // definicja klasy List. Klasa List dziedzi
           {this.state.columns.map(({key, ...columnProps}) => (
             <Column key={key} {...columnProps} />
           ))}
+        </div>
+
+        <div className={styles.creator}>
+          <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
         </div>
       </section>
     )
