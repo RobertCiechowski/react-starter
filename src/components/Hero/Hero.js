@@ -12,7 +12,7 @@ const Hero = props => (
 
 Hero.propTypes = {
   titleText: PropTypes.node.isRequired, // definicja typu Propsa (node) z zaznaczeniem że jest on wymagany (ten komponent MUSI otrzymać daną wartość)
-  titleImgUrl: PropTypes.string,
-}
+  image: PropTypes.string,
+};
 
 export default Hero;
