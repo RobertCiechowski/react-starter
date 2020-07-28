@@ -7,55 +7,57 @@ import Creator from '../Creator/Creator.js';
 import Card from '../Card/Card.js';
 
 class Column extends React.Component {
-    state = {
-        cards: this.props.cards || [],
-    }
+  state = {
+    cards: this.props.cards || [],
+  }
 
-    static propTypes = {
-        title: PropTypes.node.isRequired,
-        icon: PropTypes.node,
-        cards: PropTypes.array,
-    }
+  static propTypes = {
+    title: PropTypes.node.isRequired,
+    icon: PropTypes.node,
+    cards: PropTypes.array,
+    addCard: PropTypes.node,
+  }
 
-    static defaultProps = {
-        icon: settings.defaultColumnIcon,
-    }
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
+  }
 
-    addCard(title) {
-        this.setState(state => (
-            {
-                cards: [
-                    ...state.cards,
-                    {
-                        key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
-                        title,
-                    }
-                ]
-            }
-        ));
-    }
+  addCard(title) {
+    this.setState(state => (
+      {
+        cards: [
+          ...state.cards,
+          {
+            key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
+            title,
+          },
+        ],
+      }
+    ));
+  }
 
-    render() {
-        const { title, icon, cards, addCard } = this.props;
-        return (
-            <section className={styles.component}>
-                <h3 className={styles.title}>
-                    <span className={styles.icon}>
-                        <Icon name={icon} />
-                    </span>
-                    {this.props.title}
-                </h3>
+  render() {
+    // eslint-disable-next-line no-unused-vars
+    const { title, icon, cards, addCard } = this.props;
+    return (
+      <section className={styles.component}>
+        <h3 className={styles.title}>
+          <span className={styles.icon}>
+            <Icon name={icon} />
+          </span>
+          {this.props.title}
+        </h3>
 
-                {this.state.cards.map(({ key, ...cardProps }) => (
-                    <Card key={key} {...cardProps} />
-                ))}
+        {this.state.cards.map(({ key, ...cardProps }) => (
+          <Card key={key} {...cardProps} />
+        ))}
 
-                <div className={styles.creator}>
-                    <Creator text={settings.CardCreatorText} action={title => this.addCard(title)} />
-                </div>
-            </section>
-        );
-    }
+        <div className={styles.creator}>
+          <Creator text={settings.CardCreatorText} action={title => this.addCard(title)} />
+        </div>
+      </section>
+    );
+  }
 }
 
 export default Column;

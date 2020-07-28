@@ -1,6 +1,6 @@
 import React from 'react'; // import biblioteki React
 import styles from './App.scss';
-//import List from '../List/List.js';
+import List from '../List/List.js';
 //import {pageContents, listData} from '../../data/dataStore';
 import PropTypes from 'prop-types';
 
@@ -8,10 +8,11 @@ class App extends React.Component { // definicja klasy App. Klasa App dziedziczy
   static propTypes = {
     title: PropTypes.node,
     subtitle: PropTypes.node,
+    lists: PropTypes.array,
   }
 
   render() { // metoda render - od niej zależy to co wyświetli się w przeglądarce
-    const {title, subtitle} = this.props;
+    const {title, subtitle, lists} = this.props;
     return ( // metoda render zwraca obiekt JSX, a konkretniej div
       <main className={styles.component}>
         {/* Stary kod nagłówków
@@ -23,9 +24,15 @@ class App extends React.Component { // definicja klasy App. Klasa App dziedziczy
 
         {/* Stary kod komponentu List
         <List title={['Things to do', <sup key='1'>soon!</sup>]} imgUrl={"http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"} />*/}
-        {/*
+        
+        {/* Trochę młodszy, ale już stary kod komponentu List
         <List {...listData} />
         */}
+
+        {lists.map(listData => (
+          <List key={listData.id} {...listData} />
+        ))}
+        
       </main>
     );
   }

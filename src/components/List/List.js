@@ -1,17 +1,19 @@
 import React from 'react'; // import biblioteki React
 import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
-import Column from '../Column/Column.js';
+//import Column from '../Column/Column.js';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 
 class List extends React.Component { // definicja klasy List. Klasa List dziedziczy z klasy React.Component
+  /*
   state = { // definicja stanu komonentu List
     columns: this.props.columns || [], // jeśli this.props.columns nie zostało zdefiniowane, czyli komponent nie otrzymał propsa columns, 
-                                       //to w this.state.columns znajdzie się pusta tablica [].
+    //to w this.state.columns znajdzie się pusta tablica [].
   }
+  */
 
   static propTypes = { // definicja typów propsów
     title: PropTypes.node.isRequired, // definicja typu Propsa (node) z zaznaczeniem że jest on wymagany (ten komponent MUSI otrzymać daną wartość)
@@ -26,6 +28,7 @@ class List extends React.Component { // definicja klasy List. Klasa List dziedzi
     description: settings.defaultListDescription,
   }
 
+  /*
   addColumn(title){ // metoda AddColumn, która zmienia stan za pomocą metody this.setState
     this.setState(state => (
       {
@@ -41,32 +44,34 @@ class List extends React.Component { // definicja klasy List. Klasa List dziedzi
       }
     ));
   }
+  */
 
   render() { // metoda render - od niej zależy to co wyświetli się w przeglądarce
+    const {title, image, description} = this.props;
     return ( // metoda render zwraca obiekt JSX, a konkretniej div
       <section className={styles.component}>
-        <Hero titleText={this.props.title} image={this.props.image} />
+        <Hero titleText={title} image={image} />
         
         <div className={styles.description}>
-          {ReactHtmlParser(this.props.description)}
+          {ReactHtmlParser(description)}
         </div>
-
+        {/*
         <div className={styles.columns}>
 
           {/*<Column titleColumn={'Animals'} />
           <Column titleColumn={'Plants'} />
-          <Column titleColumn={'Minerals'} />*/}
+          <Column titleColumn={'Minerals'} /> // tu koniec komentarza w wąsach (ino te 3 kolumny)
 
           {this.state.columns.map(({key, ...columnProps}) => (
             <Column key={key} {...columnProps} />
           ))}
         </div>
-
+        */}
         <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 
