@@ -1,6 +1,6 @@
 import React from 'react'; // import biblioteki React
 import styles from './App.scss';
-import List from '../List/List.js';
+import List from '../List/ListContainer.js';
 //import {pageContents, listData} from '../../data/dataStore';
 import PropTypes from 'prop-types';
 
