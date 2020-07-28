@@ -80,20 +80,6 @@ const lists = [
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 
-  {
-    id: 'list-2',
-    title: 'Things to do now',
-    description: 'Responsibility!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  },
-
-  {
-    id: 'list-3',
-    title: 'Things to do next year',
-    description: 'Not so interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  },
-
 ];
 
 const columns = [

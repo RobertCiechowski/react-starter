@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon.js';
 //import Creator from '../Creator/Creator.js';
-//import Card from '../Card/Card.js';
+import Card from '../Card/Card.js';
 
 class Column extends React.Component {
 
@@ -43,7 +43,7 @@ class Column extends React.Component {
 
 
   render() {
-    const { title, icon /*, cards, addCard*/ } = this.props;
+    const { title, icon, cards /*, addCard*/ } = this.props;
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>
@@ -53,11 +53,11 @@ class Column extends React.Component {
           {title}
         </h3>
 
-        {/*
-        {this.state.cards.map(({ key, ...cardProps }) => (
-          <Card key={key} {...cardProps} />
+        {cards.map(cardData => (
+          <Card key={cardData.id} {...cardData} />
         ))}
 
+        {/*
         <div className={styles.creator}>
           <Creator text={settings.CardCreatorText} action={title => this.addCard(title)} />
         </div>
