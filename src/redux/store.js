@@ -11,7 +11,7 @@ const initialState = {
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
-  searchString: '',
+  searchString: 'ter', // do testów wisano "ter" w cudzysłow, normalnie powinien być pusty
 };
 
 // define reducers

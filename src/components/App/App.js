@@ -3,6 +3,7 @@ import styles from './App.scss';
 import List from '../List/ListContainer.js';
 //import {pageContents, listData} from '../../data/dataStore';
 import PropTypes from 'prop-types';
+import Search from '../Search/SearchContainer.js';
 
 class App extends React.Component { // definicja klasy App. Klasa App dziedziczy z klasy React.Component
   static propTypes = {
@@ -21,6 +22,8 @@ class App extends React.Component { // definicja klasy App. Klasa App dziedziczy
 
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
+
+        <Search />
 
         {/* Stary kod komponentu List
         <List title={['Things to do', <sup key='1'>soon!</sup>]} imgUrl={"http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"} />*/}
