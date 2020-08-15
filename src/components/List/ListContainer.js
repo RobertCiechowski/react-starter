@@ -8,9 +8,16 @@ const mapStateToProps = state => ({ // w stałej mapStateToProps zapisujemy funk
 });
 */
 
-const mapStateToProps = (state, props) => ({ // w stałej mapStateToProps zapisujemy funkcję, która definiuje powiązanie propsów z stanem
-  columns: getColumnsForList(state, props.id),
-});
+const mapStateToProps = (state, props) => { // w stałej mapStateToProps zapisujemy funkcję, która definiuje powiązanie propsów z stanem
+  const id = props.match.params.id;
+  const filteredLists = state.lists.filter(list => list.id == id);
+  const listParams = filteredLists[0] || {};
+
+  return {
+    ...listParams,
+    columns: getColumnsForList(state, id),
+  };
+};
 
 /* 
 export const getColumnsForList = ({ columns }, listId) => columns.filter(column => column.listId == listId);
@@ -18,7 +25,7 @@ export const getColumnsForList = ({ columns }, listId) => columns.filter(column 
 
 const mapDispatchToProps = (dispatch, props) => ({
   addColumn: title => dispatch(createActionAddColumn({
-    listId: props.id,
+    listId: props.match.params.id,
     title,
   })),
 });
