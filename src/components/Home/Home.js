@@ -1,9 +1,9 @@
 import React from 'react'; // import biblioteki React
 import styles from './Home.scss';
-import List from '../List/ListContainer.js';
+import ListLink from '../ListLink/ListLink.js';
 //import {pageContents, listData} from '../../data/dataStore';
 import PropTypes from 'prop-types';
-import Search from '../Search/SearchContainer.js';
+//import Search from '../Search/SearchContainer.js';
 
 class Home extends React.Component { // definicja klasy App. Klasa App dziedziczy z klasy React.Component
   static propTypes = {
@@ -23,7 +23,7 @@ class Home extends React.Component { // definicja klasy App. Klasa App dziedzicz
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
 
-        <Search /> {/* Komponent Search */}
+        {/*<Search /> {/* Komponent Search */}
 
         {/* Stary kod komponentu List
         <List title={['Things to do', <sup key='1'>soon!</sup>]} imgUrl={"http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"} />*/}
@@ -33,7 +33,7 @@ class Home extends React.Component { // definicja klasy App. Klasa App dziedzicz
         */}
 
         {lists.map(listData => (
-          <List key={listData.id} {...listData} />
+          <ListLink key={listData.id} {...listData} />
         ))}
         
       </main>
