@@ -1,0 +1,8 @@
+@import '../../styles/settings.scss';
+
+.component {
+    padding: $base-size;
+    margin: 0 auto;
+    border-radius: $radius;
+    color: #fff;
+}

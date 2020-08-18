@@ -1,0 +1,88 @@
+[33m2a1bdf0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to 2a1bdf0
+[33m2a1bdf0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{1}: commit: Changes in Search.js. (13.4)
+[33m4c0ca3d[m HEAD@{2}: reset: moving to HEAD
+[33m4c0ca3d[m HEAD@{3}: reset: moving to HEAD
+[33m4c0ca3d[m HEAD@{4}: commit: Add Search to Header.js
+[33mc1460ca[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{5}: commit: Change ListContainer.js (13.4)
+[33m58902ec[m HEAD@{6}: commit: Add routing for lists in App.js file. (13.4)
+[33me7aa9b8[m HEAD@{7}: commit: Add two list in dataStore.js file (13.4)
+[33md612e61[m HEAD@{8}: commit: Add component 'ListLink'. Change import of List.js to ListLink.js in Home.js file. (13.4)
+[33m80afcea[m HEAD@{9}: commit: Add file 'App.scss'. Change file 'App.js' and 'global.scss' to add transition between switching subpages. (13.3. done)
+[33mcae138b[m HEAD@{10}: reset: moving to HEAD
+[33mcae138b[m HEAD@{11}: reset: moving to HEAD
+[33mcae138b[m HEAD@{12}: reset: moving to HEAD
+[33mcae138b[m HEAD@{13}: reset: moving to HEAD
+[33mcae138b[m HEAD@{14}: reset: moving to HEAD
+[33mcae138b[m HEAD@{15}: reset: moving to HEAD
+[33mcae138b[m HEAD@{16}: commit: Add component 'Header' (navBar). (13.2)
+[33mebb21e4[m HEAD@{17}: commit: Add component 'MainLayout'. Import and use 'MainLayout' in 'App.js' file. (13.2)
+[33m6afad10[m HEAD@{18}: commit: Connected routing in App.js file. Changes in App.js file. (13.2)
+[33md2a9cbd[m HEAD@{19}: commit: Add new component 'Info'. (13.2)
+[33m11e50e5[m HEAD@{20}: commit: Change 'App' to 'Home' and add 'new' 'App'. Changed imports of 'App' in component js files. (13.2)
+[33mdc2e31e[m HEAD@{21}: commit: Add files 'Container.scss' and 'Container.js'. Add Container to List.js and Search.js files. (13.1 done)
+[33m614ead0[m HEAD@{22}: commit: Fix publishing project on Heroku. 12.6 done.
+[33m142c950[m[33m ([m[1;31mheroku/master[m[33m)[m HEAD@{23}: commit: Test2 (12.6)
+[33mc20b26a[m HEAD@{24}: commit: test (12.6)
+[33mba5d149[m HEAD@{25}: pull: Fast-forward
+[33m297dc72[m HEAD@{26}: commit: Prepared to publish (12.6)
+[33m65c18a2[m HEAD@{27}: commit: Change files cardsRedux.js and searchStringRedux.js (finished search window for cards filering). 12.5 done.
+[33m3dfabd0[m HEAD@{28}: commit: Change files searchStringRedux.js, store.js and App.js (added search window).
+[33mab445ed[m HEAD@{29}: commit: Add files for searchString and change file store.js
+[33me912811[m HEAD@{30}: commit: Add cardsRedux.js, change files ColumnContainer.js, Column.js and store.js (add possibility to add new cards). 12.4 done.
+[33me16ff55[m HEAD@{31}: commit: Adding columns done (12.4.1).
+[33m9a31ba9[m HEAD@{32}: reset: moving to HEAD
+[33m9a31ba9[m HEAD@{33}: reset: moving to HEAD
+[33m9a31ba9[m HEAD@{34}: reset: moving to HEAD
+[33m9a31ba9[m HEAD@{35}: reset: moving to HEAD
+[33m9a31ba9[m HEAD@{36}: checkout: moving from future1 to master
+[33mf8d0657[m[33m ([m[1;31morigin/future1[m[33m, [m[1;32mfuture1[m[33m)[m HEAD@{37}: commit: Changes in index.js file (12.4.1)
+[33m8cd65a3[m HEAD@{38}: commit: Change state by action
+[33m8e24ae8[m HEAD@{39}: commit: Restore missing files
+[33m2ce4b64[m HEAD@{40}: checkout: moving from master to future1
+[33m9a31ba9[m HEAD@{41}: commit: Migration to Redux completed. 12.3 done.
+[33mfeddc6c[m HEAD@{42}: commit: Change List.js file (rendering columns in List)
+[33mf652642[m HEAD@{43}: reset: moving to HEAD
+[33mf652642[m HEAD@{44}: reset: moving to HEAD
+[33mf652642[m HEAD@{45}: commit: Change import of List component in App.js file
+[33m4e121be[m HEAD@{46}: commit: Create file ListContainer.js based on file AppContainer.js
+[33mc6235cf[m HEAD@{47}: commit: Destructure Column.js
+[33mc5b1915[m HEAD@{48}: commit: Destructure App.js and List.js
+[33m350b0a7[m HEAD@{49}: reset: moving to HEAD
+[33m350b0a7[m HEAD@{50}: reset: moving to HEAD
+[33m350b0a7[m HEAD@{51}: reset: moving to HEAD
+[33m350b0a7[m HEAD@{52}: reset: moving to HEAD
+[33m350b0a7[m HEAD@{53}: reset: moving to HEAD
+[33m350b0a7[m HEAD@{54}: reset: moving to HEAD
+[33m350b0a7[m HEAD@{55}: commit: Add Redux. Add file AppContainer.js. Merge application state with props (12.3)
+[33m930d71d[m HEAD@{56}: reset: moving to HEAD
+[33m930d71d[m HEAD@{57}: reset: moving to HEAD
+[33m930d71d[m HEAD@{58}: reset: moving to HEAD
+[33m930d71d[m HEAD@{59}: reset: moving to HEAD
+[33m930d71d[m HEAD@{60}: reset: moving to HEAD
+[33m930d71d[m HEAD@{61}: reset: moving to HEAD
+[33m930d71d[m HEAD@{62}: checkout: moving from future1 to master
+[33m2ce4b64[m HEAD@{63}: pull: Merge made by the 'recursive' strategy.
+[33m0a3225b[m HEAD@{64}: commit (amend): Fixed errors found by ESLint. 12.1 done.
+[33m06c9021[m HEAD@{65}: commit: Fixed errors found by ESLint
+[33mdb3af35[m HEAD@{66}: checkout: moving from master to future1
+[33m930d71d[m HEAD@{67}: checkout: moving from future1 to master
+[33mdb3af35[m HEAD@{68}: checkout: moving from master to future1
+[33m930d71d[m HEAD@{69}: commit: Add ESLint and husky
+[33mdb3af35[m HEAD@{70}: reset: moving to HEAD
+[33mdb3af35[m HEAD@{71}: reset: moving to HEAD
+[33mdb3af35[m HEAD@{72}: merge future1: Fast-forward
+[33m520ec23[m HEAD@{73}: checkout: moving from future1 to master
+[33mdb3af35[m HEAD@{74}: commit: Change JSX code fot <h3> in method render in class Card. 11.5 done.
+[33m3267e88[m HEAD@{75}: commit: Add component Card. In component Column added: state, addCard method, changed render method. (ex.11.5)
+[33m913d8ef[m HEAD@{76}: commit: Add components Button and Creator. Add method addCOlumn to List.js component
+[33m4713ad3[m HEAD@{77}: commit: Add state of component
+[33m6d2d6b1[m HEAD@{78}: commit: Component List: import and use dataStore.js. Parsed HTML code in components List and Hero.
+[33m0e4b808[m HEAD@{79}: commit: Import and use objects pageContents and listData in App.js component
+[33m38b3a5a[m HEAD@{80}: commit: Add component 'Column', at component 'List' add JSX code - div with columns. 11.4 done.
+[33m520ec23[m HEAD@{81}: checkout: moving from master to future1
+[33m520ec23[m HEAD@{82}: revert: Revert "Exercise 11.5"
+[33mb98dd86[m HEAD@{83}: commit: Exercise 11.5
+[33m85ae0d0[m HEAD@{84}: commit: Change components in List.js and Column.js - 11.3 done
+[33mec55bcb[m HEAD@{85}: commit: Add components Column
+[33mf15324c[m HEAD@{86}: commit: Add components List, Hero
+[33m546f198[m HEAD@{87}: commit (initial): Init project
