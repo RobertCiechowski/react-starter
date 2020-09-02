@@ -3,7 +3,7 @@ import styles from './Home.scss';
 import ListLink from '../ListLink/ListLink.js';
 //import {pageContents, listData} from '../../data/dataStore';
 import PropTypes from 'prop-types';
-//import Search from '../Search/SearchContainer.js';
+// import Search from '../Search/SearchContainer.js';
 
 class Home extends React.Component { // definicja klasy App. Klasa App dziedziczy z klasy React.Component
   static propTypes = {
